@@ -1,0 +1,774 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration-line: none;
+    background-color:black;
+
+}
+.header{
+    position:absolute;
+    display: flex;
+   
+    margin-top: 35px;
+    margin-left: 600px;
+    word-spacing: 50px;
+    justify-content: space-between;
+    animation:header 2s normal 0s 1  both;
+
+    z-index: 1000;
+    
+  }
+  
+  @keyframes header{
+      from{
+        translate:0px -2000px;
+      }
+  
+      to{
+          translate:0px 0px;
+      }
+  }
+  
+
+.ball img{
+  width: 40px;
+  height: 35px;
+  background: transparent;
+
+  animation: ball 4s linear infinite;
+}
+@keyframes ball{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+.ball a{
+  position: relative;
+  top:-20px;
+  right: 540px;
+  background: transparent;
+
+}
+.gress img{
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 10px;
+  padding: 0px;
+  left: 20px;
+  background: transparent;
+
+}
+.gress a{
+  position: relative;
+  top:15px;
+  right: 585px;
+  background: transparent;
+
+}
+
+
+.navbar li{
+    display: inline;
+    background: transparent;
+
+
+}
+
+.navbar a{
+    font-size: 25px;
+    font-weight: 800;
+    color:white;
+    background: transparent;
+
+
+}
+
+.navbar a:hover{
+    color:chartreuse;
+    text-decoration-line: underline;
+    background: transparent;
+
+
+}
+
+
+/*home*/
+section{
+    padding:0px 0% 0px;
+  }
+  .home{
+    
+    height:100vh;
+    width:100%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items:center;
+    gap:2rem
+  }
+  .home-img img{
+      width:400px ;
+      height: auto;
+      position: relative;
+      left:100px;
+      top:40px;
+      animation: img 2s normal 2.5s 1  both;
+    }
+    
+    @keyframes img{
+        from{
+          translate: 2000px;
+        }
+    
+        to{
+            translate: 0px;
+        }
+    }
+    
+      
+  
+  .home-text h1{
+
+    color: white;
+    font-size:50px;
+    font-weight: 700;
+    font-family: fantasy;
+    margin-left: 50px;
+    margin-top: 0px;
+    animation: name 2s normal 1s 1  both;
+  }
+  
+  @keyframes name{
+      from{
+        translate: -2000px;
+      }
+  
+      to{
+          translate: 0px;
+      }
+  }
+  
+  
+  
+  .more{
+    display: inline-block;
+    padding:15px 35px;
+    background-color:chartreuse;
+    color:black;
+    font-family: fantasy;
+    font-size:30px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 3rem;
+    transition: all .50s ease;
+    position: absolute;
+    left:50px;
+    top:450px;
+    box-shadow: chartreuse 0px 1px 25px;
+    animation: name 2s normal 2.5s 1  both;
+  }
+  
+  @keyframes name{
+      from{
+        translate: -2000px;
+      }
+  
+      to{
+          translate: 0px;
+      }
+  }
+  
+  
+
+
+
+  .more:hover{
+    transform: scale(0.9);
+  }
+  span{
+    color:chartreuse;
+  }
+  .home p{
+    color:white;
+    font-family: fantasy;
+    font-weight: 500;
+    margin-left: 50px;
+    animation: name 2s normal 2s 1  both;
+  }
+  
+  @keyframes name{
+      from{
+        translate: -2000px;
+      }
+  
+      to{
+          translate: 0px;
+      }
+  }
+  
+/*team*/
+.team h2{
+  color: white;
+  font-size:40px;
+  font-weight: 700;
+  font-family: fantasy;
+  margin-left: 550px;
+  margin-top: 30px;
+ 
+}
+.team p{
+  color:white;
+  font-family: fantasy;
+  font-weight: 500;
+  margin-left: 450px;
+  margin-top: 5px;
+}
+  
+.real h3{
+  color: white;
+  font-size:25px;
+  font-weight: 700;
+  font-family: fantasy;
+  margin-left: 550px;
+  margin-top: 50px;
+  animation: hideMenu 17s  ease-in-out forwards; 
+
+}
+.list li{
+  color: white;
+  
+  font-weight: 500;
+  font-family: fantasy;
+  margin-left: 550px;
+  margin-top: 50px;
+  animation: hideMenu 17s  ease-in-out forwards; 
+}
+@keyframes hideMenu {
+  0% {
+    opacity: 0;
+    transform: scale(1); /* Original size */
+  }
+  50%{
+    
+    opacity: 1;
+    transform: scale(1); /* Original size */
+
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1); /* Shrinks to half the size */
+  }
+}
+.real-img img{
+  margin-top: -450px;
+  animation: hideMenu 17s  ease-in-out forwards; 
+
+}
+
+.real2-img img{
+  width: 150px;
+  margin-left: 550px;
+  margin-top: 0px;
+
+}
+
+
+/* Container styling */
+.container {
+  text-align: center;
+  
+  padding: 35px;
+  border-radius: 100px;
+  box-shadow: 0 8px 10px chartreuse ;
+  width: 300px;
+  margin-top: -480px;
+  margin-left: 400px;
+  animation: container 10s 13s ease-in-out backwards ; 
+
+}
+@keyframes container {
+  0% {
+    opacity: 0;
+    transform: scale(1); 
+  }
+  
+  100% {
+    opacity: 1;
+    transform: scale(1); /
+  }
+}
+/* Number styling */
+.number {
+  font-size: 2.5em;
+  font-weight: bold;
+  color:black;
+  background-color:white; 
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  margin: auto;
+  
+  position: relative;
+  top: -10px; 
+}
+
+/* Logo styling */
+.logo {
+  width: 150px;
+  border: 3px solid ; 
+  border-radius: 50%; 
+  margin: 10px 0;
+  transition: transform 0.3s ease;
+}
+
+
+.logo:hover {
+  transform: scale(1.1); 
+}
+
+/* Title styling */
+.title {
+  font-size: 1.8em;
+  font-family: 'Arial', sans-serif;
+  color:white; 
+  margin-top: 0px;
+}
+
+
+/*Milan*/
+.ac-img img{
+  width: 500px;
+  margin-top: -400px;
+  animation: hideMenu2 17s 16s ease-in-out both; 
+
+}
+.list2 li{
+  color: white;
+  
+  font-weight: 500;
+  font-family: fantasy;
+  margin-left: 550px;
+  margin-top: 45px;
+  animation: hideMenu2 17s 16s ease-in-out both; 
+}
+@keyframes hideMenu2 {
+  0% {
+    opacity: 0;
+    transform: scale(1); 
+  }
+  50%{
+    
+    opacity: 1;
+    transform: scale(1); 
+
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1); 
+  }
+}
+
+.Milan h3{
+  color: white;
+  font-size:25px;
+  font-weight: 700;
+  font-family: fantasy;
+  margin-left: 550px;
+  margin-top: 50px;
+  animation: hideMenu2 17s 16s ease-in-out both; 
+
+}
+
+.Milan .container {
+  animation: container 10s 30s ease-in-out backwards ; 
+  margin-top: -400px;
+}
+
+
+
+
+
+/*Bayern */
+.by-img img{
+  width: 450px;
+  margin-top: -350px;
+  animation: hideMenu3 17s 35s ease-in-out both; 
+
+}
+.list3 li{
+  color: white;
+  
+  font-weight: 500;
+  font-family: fantasy;
+  margin-left: 550px;
+  margin-top: 35px;
+  animation: hideMenu3 17s 35s ease-in-out both; 
+}
+@keyframes hideMenu3 {
+  0% {
+    opacity: 0;
+    transform: scale(1); /* Original size */
+  }
+  50%{
+    
+    opacity: 1;
+    transform: scale(1); /* Original size */
+
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1); /* Shrinks to half the size */
+  }
+}
+
+.Bayern h3{
+  color: white;
+  font-size:25px;
+  font-weight: 700;
+  font-family: fantasy;
+  margin-left: 550px;
+  margin-top: 50px;
+  animation: hideMenu3 17s 35s ease-in-out both; 
+
+}
+
+.Bayern .container {
+  animation: container 10s 50s ease-in-out backwards ; 
+  margin-top: -400px;
+}
+
+
+
+/*Players*/
+
+.img1 img{
+  position: relative;
+  top: 50px;
+  width: 400px;
+  
+ 
+}
+.img2 img{
+  width: 450px;
+  margin-left: 800px;
+  margin-top: -800px;
+}
+.one h2{
+  color: white;
+  font-size:40px;
+  font-weight: 700;
+  font-family: fantasy;
+  margin-left: 550px;
+  margin-top: 200px;
+ 
+}
+.one p{
+  color:white;
+  font-family: fantasy;
+  font-weight: 500;
+  margin-left: 510px;
+  margin-top: 5px;
+}
+
+.cr7 img{
+  width: 200px;
+  position: relative;
+  top: 200px;
+  right:-350px;
+}
+.cr7 h4{
+  color:black;
+  background-color: white;
+  position: absolute;
+  left: 400px;
+  top:2420px;
+  font-weight: 500;
+  font-family: fantasy;
+  animation: one 9s 5s linear both;
+}
+@keyframes one{
+  0% {
+    opacity: 0;
+    transform: scale(1); /* Original size */
+  }
+  50%{
+    
+    opacity: 1;
+    transform: scale(1); /* Original size */
+
+  }
+
+  90%{
+    
+    opacity: 1;
+    transform: scale(1); /* Original size */
+
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1); /* Shrinks to half the size */
+  }
+}
+
+/*player2*/
+.masse img{
+  width: 200px;
+  position: relative;
+  top: 57px;
+  right:-750px;
+}
+.masse h4{
+  color:black;
+  background-color: white;
+  position: absolute;
+  left: 800px;
+  margin-top: -35px;
+  font-weight: 500;
+  font-family: fantasy;
+  animation: one 6s 8s linear both;
+
+}
+
+.cr7 p{
+  font-size: 17px;
+  font-family: fantasy;
+  color:black;
+  background-color: white;
+  position: absolute;
+  left: 370px;
+  margin-top: 90px;
+  animation: one 8s 12s linear both;
+
+}
+
+.masse p{
+  font-size: 17px;
+  font-family: fantasy;
+  color:black;
+  background-color: white;
+  position: absolute;
+  left: 780px;
+  margin-top: -35px;
+  animation: one 8s 16s linear both;
+
+}
+.four p{
+  font-size: 15px;
+  font-family: fantasy;
+  color:black;
+  background-color: white;
+  position: absolute;
+  left: 365px;
+  margin-top: 90px;
+  animation: one 8s 20s linear both;
+
+}
+.five p{
+  font-size: 15px;
+  font-family: fantasy;
+  color:black;
+  background-color: white;
+  position: absolute;
+  left: 760px;
+  margin-top: -35px;
+  animation: one 8s 25s linear both;
+
+}
+.six p{
+  font-size: 15px;
+  font-family: fantasy;
+  color:black;
+  background-color: white;
+  position: absolute;
+  left: 365px;
+  margin-top: 90px;
+  animation: one 8s 30s linear both;
+
+}
+
+.seven p{
+  font-size: 15px;
+  font-family: fantasy;
+  color:black;
+  background-color: white;
+  position: absolute;
+  left: 780px;
+  margin-top: -35px;
+  animation: one 8s 35s linear both;
+
+}
+
+.finaly h3{
+  color:chartreuse;
+  margin-left: 48%;
+  margin-top: -300px;
+  font-size: 35px;
+  font-weight: 700;
+  font-family: fantasy;
+  width: 150px;
+  animation: two 8s 37s linear both;
+
+}
+@keyframes two{
+  0% {
+    opacity: 0;
+    transform: scale(1); /* Original size */
+  }
+ 
+  100% {
+    opacity: 1;
+    transform: scale(1); /* Shrinks to half the size */
+  }
+}
+.finaly p{
+  color:white;
+  font-size: 20px;
+  margin-left: 430px;
+  margin-top: 30px;
+  font-family: fantasy;
+  animation: two 8s 37s linear both;
+  width: 450px;
+
+}
+
+
+button{
+  color:black;
+  margin-left: 46%;
+  position: relative;
+  top: 50px;
+  background-color: chartreuse;
+  border-radius: 35px;
+  font-family: fantasy;
+  font-weight: 600;
+  width: 150px;
+  height: 40px;
+  font-size: 25px;
+  box-shadow: chartreuse 0px 1px 25px;
+  animation: two 8s 40s linear both;
+}
+button:hover{
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+
+
+
+  /*contact*/
+.contact{
+  background-color:black;
+  margin-top: 350px;
+}
+.contact h2{
+  margin-bottom: 2rem;
+  color:white;
+  font-size: 40px;
+  font-family: fantasy;
+  margin-left: 43%;
+
+}
+.contact p{
+  color:white;
+  font-size: 20px;
+  margin-left: 270px;
+  margin-top: 30px;
+  font-family: fantasy;
+  width: 800px;
+}
+.contact form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:3rem;
+  margin: 5rem auto;
+  text-align: center;
+}
+
+.contact form .input-box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.contact form .input-box input,
+.contact form textarea{
+    width: 200px;
+    padding: 2rem;
+    font-size: 1rem;
+    color:white;
+    background:black;
+    border-radius: 2rem;
+    border: 2px solid chartreuse;
+    margin: 1.5rem 0;
+    resize: none;
+
+}
+
+.contact form .btn{
+  margin-top: -30px;
+  margin-left: -230px;
+}
+.btn{
+  color:black;
+  margin-left: 50%;
+  position: relative;
+  top: 50px;
+  background-color: chartreuse;
+  border-radius: 35px;
+  font-family: fantasy;
+  font-weight: 600;
+  width: 200px;
+  height: 40px;
+  font-size: 25px;
+  box-shadow: chartreuse 0px 1px 25px;
+}
+.btn:hover{
+    transform: scale(0.9);
+  }
+
+/*preloader*/
+
+  #preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0a0a0a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .loader-icon img{
+     width: 100px;
+    animation: ball 1s linear infinite;
+  }
+  
+  @keyframes ball {
+     100% {
+      transform: rotate(360deg);
+      opacity: 1;
+    }
+    
+  }
+
+
+  /*scroll*/
+  .scroll{
+    position: fixed;
+    bottom: 2.2rem;
+    border-top: 2rem;
+    right: 3.2rem;
+  }
+  .scroll i{
+    font-size: 22px;
+    font-weight: 800;
+    color:black;
+    background: chartreuse;
+    padding:10px;
+    border-radius: 2rem;
+  }
